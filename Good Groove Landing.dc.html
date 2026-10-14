@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Good Groove Bangkok | Funk, Disco, Hip Hop and R&amp;B at The Red Door</title>
+<meta name="description" content="Old school funk, disco, hip hop and R&amp;B, old and new. Last Friday of every month at The Red Door, Sukhumvit Soi 24. Early bird tickets 500 THB.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:#2a1e16;color:#f1e6d2;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}a{color:#d6ae6c}a:hover{color:#f1e6d2}summary::-webkit-details-marker{display:none}summary{list-style:none}html{scroll-behavior:smooth;scroll-padding-top:64px}</style>
+<script src="lib/pixel.js"></script>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;padding-bottom:{{ bottomPad }}">
+
+  <header style="position:sticky;top:0;z-index:10;background:#2a1e16;border-bottom:1px solid #4a3828">
+    <div style="max-width:1120px;margin:0 auto;padding:0 20px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <a href="#top" aria-label="Good Groove" style="display:flex;align-items:center;height:44px"><img src="artwork/goodgroove-logo.png" alt="Good Groove" style="height:32px;width:auto;display:block"></a>
+      <a href="{{ ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:44px;padding:0 16px;background:#d6ae6c;color:#2a1e16;font-weight:600;font-size:13px;letter-spacing:0.1em;text-decoration:none;white-space:nowrap;flex-shrink:0">GET TICKETS</a>
+    </div>
+  </header>
+
+  <main id="top" style="flex:1">
+
+    <section aria-label="Good Groove" style="display:flex;flex-direction:column">
+      <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:-1px">Good Groove Bangkok. Good music. Good taste.</h1>
+      <div ref="{{ heroWrapRef }}" style="max-width:min(100% - 40px, 400px);width:100%;margin:24px auto 0">
+        <picture>
+          <img ref="{{ heroRef }}" src="artwork/goodgroove-2026-10.jpg" alt="Good Groove. Where your weekend finds its groove. Friday 30 October at The Red Door, 89/8 Suk Soi 24, 3rd Floor, Staybridge Suites." fetchpriority="high" style="display:block;width:100%;height:auto">
+        </picture>
+      </div>
+      <div style="max-width:1120px;width:100%;margin:0 auto;padding:32px 20px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px 40px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <p style="margin:0;font-family:'DM Serif Display',Georgia,serif;font-size:clamp(28px,5vw,40px);line-height:1.12;color:#f1e6d2;text-wrap:balance">FINALLY. Good music in Bangkok, done right.</p>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:#e2d4bc">Friday 30 October • The Red Door • Suk Soi 24 • Doors 10pm</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <a href="{{ ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;background:#d6ae6c;color:#2a1e16;font-weight:600;font-size:15px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">GET TICKETS</a>
+          <a href="#reserved" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;background:#f1e6d2;color:#2a1e16;font-weight:600;font-size:15px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">TABLES &amp; LOUNGES</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="gg-about" style="border-top:1px solid #4a3828">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px 40px">
+        <h2 id="gg-about" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">ABOUT</h2>
+        <p style="margin:0;grid-column:span 2;max-width:680px;font-size:clamp(19px,2.6vw,22px);line-height:1.6;color:#f1e6d2;text-wrap:pretty">Good Groove is a night for people who actually love music. Old school funk, disco, hip hop and R&amp;B, played by DJs who know the difference between a hit and a groove. No posing, no gimmicks. Just good records, good people and a room that moves. The perfect start to your weekend.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="gg-music" style="border-top:1px solid #4a3828">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:flex;flex-direction:column;gap:24px">
+        <h2 id="gg-music" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">THE MUSIC</h2>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 18px;font-family:'DM Serif Display',Georgia,serif;font-size:clamp(34px,7vw,64px);line-height:1.05;color:#d6ae6c">
+          <li>Old school funk</li><li aria-hidden="true" style="color:#7a6046">•</li>
+          <li>Disco</li><li aria-hidden="true" style="color:#7a6046">•</li>
+          <li>Hip hop</li><li aria-hidden="true" style="color:#7a6046">•</li>
+          <li>R&amp;B</li><li aria-hidden="true" style="color:#7a6046">•</li>
+          <li style="color:#f1e6d2">and beyond</li>
+        </ul>
+        <p style="margin:0;max-width:640px;font-size:18px;line-height:1.6;color:#e2d4bc;text-wrap:pretty">From Earth Wind &amp; Fire, Prince and Maxwell to Outkast, Anderson .Paak, Tuxedo and Purple Funk Machine. Different decades, same groove.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="gg-night" style="border-top:1px solid #4a3828">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px 40px">
+        <h2 id="gg-night" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">THE NIGHT</h2>
+        <dl style="margin:0;grid-column:span 2;display:flex;flex-direction:column">
+          <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #4a3828"><dt style="font-size:12px;letter-spacing:0.14em;color:#b9a68a;padding-top:4px">WHEN</dt><dd style="margin:0;font-size:18px">Last Friday of every month</dd></div>
+          <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #4a3828"><dt style="font-size:12px;letter-spacing:0.14em;color:#b9a68a;padding-top:4px">DOORS</dt><dd style="margin:0;font-size:18px">Doors 10pm till late</dd></div>
+          <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #4a3828"><dt style="font-size:12px;letter-spacing:0.14em;color:#b9a68a;padding-top:4px">WHERE</dt><dd style="margin:0;font-size:18px;display:flex;flex-direction:column;gap:6px"><span>The Red Door, 89/8 Sukhumvit Soi 24, 3rd Floor, Staybridge Suites</span><a href="{{ mapUrl }}" target="_blank" rel="noopener" style="font-size:14px;letter-spacing:0.08em">OPEN IN MAPS</a></dd></div>
+          <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #4a3828"><dt style="font-size:12px;letter-spacing:0.14em;color:#b9a68a;padding-top:4px">CAPACITY</dt><dd style="margin:0;font-size:18px">Small capacity on purpose</dd></div>
+          <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #4a3828"><dt style="font-size:12px;letter-spacing:0.14em;color:#b9a68a;padding-top:4px">DRESS</dt><dd style="margin:0;font-size:18px">Smart casual and comfortable</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section aria-labelledby="gg-lineup" style="border-top:1px solid #4a3828">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px 40px;align-items:baseline">
+        <h2 id="gg-lineup" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">LINEUP</h2>
+        <div style="grid-column:span 2;display:flex;flex-direction:column;gap:12px">
+          <p style="margin:0;font-family:'DM Serif Display',Georgia,serif;font-size:clamp(30px,5vw,44px);line-height:1.1">Announced soon.</p>
+          <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="font-size:15px">Follow on Instagram to hear first</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tickets" aria-labelledby="gg-tickets" style="background:#f1e6d2;color:#2a1e16">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:flex;flex-direction:column;gap:24px">
+        <h2 id="gg-tickets" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#7a5418">TICKETS</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px">
+          <sc-for list="{{ prices }}" as="p" hint-placeholder-count="2">
+            <div style="background:#fbf6ec;border:1px solid #cdbb9c;padding:24px;display:flex;flex-direction:column;gap:10px">
+              <span style="font-size:18px;font-weight:600">{{ p.tier }}</span>
+              <span style="font-family:'DM Serif Display',Georgia,serif;font-size:52px;line-height:1">{{ p.price }}</span>
+              <span style="font-size:15px;line-height:1.5;color:#5a4a38;text-wrap:pretty">{{ p.note }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:0;font-size:15px;color:#5a4a38">Door price ฿750, only if space allows. All sales final.</p>
+        <a href="{{ ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:56px;max-width:420px;padding:0 32px;background:#2a1e16;color:#f1e6d2;font-weight:600;font-size:15px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">GET TICKETS</a>
+      </div>
+    </section>
+
+    <section id="reserved" aria-labelledby="gg-reserved">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px;display:flex;flex-direction:column;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <h2 id="gg-reserved" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">RESERVED AREAS</h2>
+          <p style="margin:0;max-width:640px;font-family:'DM Serif Display',Georgia,serif;font-size:clamp(28px,4.5vw,40px);line-height:1.15">Tables and lounges, added as an upgrade at checkout.</p>
+          <p style="margin:0;font-size:16px;color:#e2d4bc">Entry tickets are not included. Buy them separately.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(260px,calc(50% - 6px))),1fr));gap:12px">
+          <sc-for list="{{ upgrades }}" as="u" hint-placeholder-count="4">
+            <div style="border:1px solid #5a4432;background:#32241a;padding:18px 20px;display:flex;flex-direction:column;gap:8px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                <span style="font-size:12px;font-weight:600;letter-spacing:0.14em;color:#b9a68a">{{ u.guests }} GUESTS</span>
+                <span style="font-size:13px;color:#d6ae6c;font-weight:600">{{ u.pay }}</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px"><span style="font-family:'DM Serif Display',Georgia,serif;font-size:22px;line-height:1.15;color:#f1e6d2;text-wrap:balance">{{ u.name }}</span><span style="font-family:'DM Serif Display',Georgia,serif;font-size:28px;line-height:1;color:#d6ae6c;white-space:nowrap">{{ u.cost }}</span></div>
+              <span style="font-size:15px;line-height:1.5;color:#e2d4bc;text-wrap:pretty">{{ u.includes }}. Includes {{ u.spend }}.</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="{{ ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 24px;background:#d6ae6c;color:#2a1e16;font-weight:600;font-size:14px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">BOOK A TABLE OR LOUNGE</a>
+          <a href="{{ boothUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 24px;border:1px solid #d6ae6c;color:#d6ae6c;font-weight:600;font-size:14px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">WHATSAPP US</a>
+          <a href="{{ lineUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 24px;border:1px solid #d6ae6c;color:#d6ae6c;font-weight:600;font-size:14px;letter-spacing:0.12em;text-decoration:none;white-space:nowrap">LINE US</a>
+        </div>
+        <details style="border-top:1px solid #4a3828;border-bottom:1px solid #4a3828">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;padding:14px 0;cursor:pointer;font-size:17px;font-weight:500">Reserved booth and table terms and conditions<span aria-hidden="true" style="font-size:24px;color:#d6ae6c">+</span></summary>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px 40px;padding:4px 0 28px;font-size:15px;line-height:1.6;color:#e2d4bc">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">DEPOSIT &amp; BALANCE</h3>
+              <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+                <li>The price shown at checkout is a <strong style="color:#f1e6d2">deposit only</strong> to secure your booth. Table upgrades require full payment upfront.</li>
+                <li>The remaining balance must be paid in full <strong style="color:#f1e6d2">no later than 7 days before the event</strong>.</li>
+                <li>If the balance is not received by this date, the booking will be cancelled and the <strong style="color:#f1e6d2">deposit forfeited</strong>.</li>
+                <li>You will be contacted ahead of the payment due date to arrange payment of the balance.</li>
+                <li>Booths are limited.</li>
+              </ul>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:24px">
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <h3 style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">CANCELLATIONS</h3>
+                <ul style="margin:0;padding-left:18px"><li>All bookings are final. No refunds are given unless an event is cancelled or postponed, at which time you will also be offered a booking credit to another event or a refund.</li></ul>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <h3 style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">ARRIVAL</h3>
+                <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+                  <li>Event start time is <strong style="color:#f1e6d2">10pm</strong>.</li>
+                  <li>Tables and booths are held for <strong style="color:#f1e6d2">60 minutes only</strong>, after which they will be released without refund.</li>
+                  <li>If you intend to arrive at a specific time, please inform us ahead of time.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="gg-faq" style="border-top:1px solid #4a3828">
+      <div style="max-width:1120px;margin:0 auto;padding:56px 20px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px 40px">
+        <h2 id="gg-faq" style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;color:#d6ae6c">FAQ</h2>
+        <div style="grid-column:span 2;display:flex;flex-direction:column">
+          <sc-for list="{{ faq }}" as="f" hint-placeholder-count="6">
+            <details style="border-bottom:1px solid #4a3828">
+              <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;padding:14px 0;cursor:pointer;font-size:18px;font-weight:500">{{ f.q }}<span aria-hidden="true" style="font-size:24px;color:#d6ae6c">+</span></summary>
+              <p style="margin:0;padding:0 0 20px;font-size:16px;line-height:1.6;color:#e2d4bc">{{ f.a }}</p>
+            </details>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid #4a3828">
+    <div style="max-width:1120px;margin:0 auto;padding:32px 20px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px">
+      <a href="https://alpha11.co" style="display:flex;align-items:center;gap:12px;font-size:14px;color:#b9a68a;text-decoration:none">Presented by Alpha Eleven</a>
+      <nav aria-label="Contact and social" style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="{{ instagramUrl }}" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid #d6ae6c;color:#d6ae6c" style-hover="background:#d6ae6c;color:#2a1e16"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="{{ facebookUrl }}" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid #d6ae6c;color:#d6ae6c" style-hover="background:#d6ae6c;color:#2a1e16"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"></path></svg></a>
+        <a href="{{ boothUrl }}" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid #d6ae6c;color:#d6ae6c" style-hover="background:#d6ae6c;color:#2a1e16"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"></path><path d="M9 8.2c-.4.9 0 2.6 1.6 4.2s3.3 2 4.2 1.6l.7-1.2-1.8-1-.9.8c-.8-.4-1.5-1.1-1.9-1.9l.8-.9-1-1.8z" fill="currentColor" stroke-width="0.6"></path></svg></a>
+        <a href="{{ lineUrl }}" target="_blank" rel="noopener" aria-label="LINE" title="LINE" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid #d6ae6c;color:#d6ae6c" style-hover="background:#3d2d21"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-5 0-9 3.2-9 7.2 0 3.5 3.2 6.5 7.5 7.1.3.1.7.2.8.5.1.3 0 .7 0 .9l-.1.8c0 .3-.2.9.8.5s5.5-3.2 7.5-5.5c1.4-1.5 1.5-2.9 1.5-4.3 0-4-4-7.2-9-7.2z" fill="currentColor"></path><text x="12" y="12.9" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" font-weight="700" fill="#2a1e16">LINE</text></svg></a>
+      </nav>
+    </div>
+  </footer>
+
+  <sc-if value="{{ stickyCta }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2a1e16;border-top:1px solid #4a3828;padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <span style="display:flex;flex-direction:column;font-size:13px;line-height:1.35;color:#e2d4bc"><strong style="color:#f1e6d2;font-weight:600">Fri 30 Oct · The Red Door</strong>Early bird 500 THB</span>
+      <a href="{{ ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:48px;padding:0 20px;background:#d6ae6c;color:#2a1e16;font-weight:600;font-size:14px;letter-spacing:0.1em;text-decoration:none;white-space:nowrap;flex-shrink:0">GET TICKETS</a>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844},&quot;stickyCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  state = { d: null };
+  heroRef = React.createRef();
+  heroWrapRef = React.createRef();
+  componentDidMount() {
+    this.mq = window.matchMedia('(min-width: 768px)');
+    this.onMq = () => { const el = this.heroRef.current; if (el) el.src = this.mq.matches ? 'artwork/goodgroove-2026-10-banner.jpg' : 'artwork/goodgroove-2026-10.jpg'; const w = this.heroWrapRef.current; if (w) w.style.maxWidth = this.mq.matches ? 'min(100% - 40px, 960px)' : 'min(100% - 40px, 400px)'; };
+    this.mq.addEventListener('change', this.onMq); this.onMq();
+    import(new URL('lib/site.js', document.baseURI).href)
+      .then(m => { this.wa = m.wa; return m.load(); })
+      .then(d => this.setState({ d })).catch(e => console.error(e));
+  }
+  componentWillUnmount() { this.mq?.removeEventListener('change', this.onMq); }
+  renderVals() {
+    const d = this.state.d, b = d?.brands.find(x => x.id === 'goodgroove'), ev = b?.event, c = d?.contact || {};
+    const stickyCta = this.props.stickyCta ?? true;
+    const faq = b?.faq || [];
+    return {
+      heroRef: this.heroRef, heroWrapRef: this.heroWrapRef,
+      lineUrl: c.lineUrl || '#',
+      prices: (ev?.prices || []).map(p => ({ ...p, note: (p.note || '').replace(/\s*Door price ฿750\.?/, '') })),
+      upgrades: ev?.upgrades || [],
+      ticketUrl: ev?.ticketUrl || '#tickets', mapUrl: ev?.mapUrl || '#',
+      instagramUrl: b?.instagramUrl || '#', facebookUrl: b?.facebookUrl || '#',
+      boothUrl: this.wa ? this.wa(c.whatsapp, 'Hi, I have a question about tables and lounges at Good Groove on Friday 30 October.') : '#',
+      faq, stickyCta, bottomPad: stickyCta ? '72px' : '0',
+      hideImg: e => { e.currentTarget.style.display = 'none'; }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "goodgroovebkk.com"
+        }
+      ],
+      "destination": "/Good%20Groove%20Landing.dc.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.goodgroovebkk.com"
+        }
+      ],
+      "destination": "/Good%20Groove%20Landing.dc.html"
+    },
+    {
+      "source": "/goodgroove",
+      "destination": "/Good%20Groove%20Landing.dc.html"
+    },
+    {
+      "source": "/",
+      "destination": "/Home.dc.html"
+    }
+  ]
+}

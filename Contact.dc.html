@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Contact — Alpha Eleven</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:#e7e4de;color:#1c1d1f;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}a{color:#1c1d1f}a:hover{color:#000}</style>
+<script src="lib/pixel.js"></script>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column">
+  <dc-import name="SiteHeader" active="contact" brands="{{ brands }}" hint-size="100%,64px"></dc-import>
+  <main style="flex:1">
+    <section style="max-width:1280px;margin:0 auto;padding:48px 20px 64px">
+      <h1 style="margin:0 0 16px;font-size:clamp(40px,9vw,96px);line-height:0.95;font-weight:600;letter-spacing:-0.02em;text-transform:uppercase">Contact</h1>
+      <p style="margin:0 0 40px;font-size:18px;line-height:1.5;color:#3d3e41;max-width:560px">Tickets, booths and general questions. Fastest reply on WhatsApp or LINE.</p>
+      <div style="display:flex;flex-direction:column;gap:28px;align-items:flex-start">
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="{{ waUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;min-height:56px;padding:0 26px 0 20px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:15px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap" style-hover="background:#000"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"></path><path d="M9 8.2c-.4.9 0 2.6 1.6 4.2s3.3 2 4.2 1.6l.7-1.2-1.8-1-.9.8c-.8-.4-1.5-1.1-1.9-1.9l.8-.9-1-1.8z" fill="currentColor" stroke-width="0.6"></path></svg>WhatsApp us</a>
+          <a href="{{ lineUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;min-height:56px;padding:0 26px 0 20px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:15px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap" style-hover="background:#000"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-5 0-9 3.2-9 7.2 0 3.5 3.2 6.5 7.5 7.1.3.1.7.2.8.5.1.3 0 .7 0 .9l-.1.8c0 .3-.2.9.8.5s5.5-3.2 7.5-5.5c1.4-1.5 1.5-2.9 1.5-4.3 0-4-4-7.2-9-7.2z" fill="currentColor"></path><text x="12" y="12.9" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" font-weight="700" fill="#1c1d1f">LINE</text></svg>Add friend on LINE</a>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="c-form" style="border-top:1px solid #d2cec6">
+      <div style="max-width:1280px;margin:0 auto;padding:64px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 48px">
+        <h2 id="c-form" style="margin:0;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a;font-weight:500">Send a message</h2>
+        <sc-if value="{{ sent }}">
+          <p style="margin:0;max-width:640px;font-size:clamp(20px,2.6vw,26px);line-height:1.45">Thanks, your message has been sent. We'll reply by email.</p>
+        </sc-if>
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+          <form action="https://formsubmit.co/hello@alpha11.co" method="POST" style="display:flex;flex-direction:column;gap:16px;max-width:640px;width:100%">
+            <input type="hidden" name="_subject" value="Website enquiry — alpha11.co">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="{{ nextUrl }}">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px">
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Name<input name="name" required autocomplete="name" style="min-height:52px;padding:0 14px;border:1px solid #a9a59d;background:#f7f6f3;font:inherit;font-size:16px;font-weight:400;color:#1c1d1f"></label>
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Email<input type="email" name="email" required autocomplete="email" style="min-height:52px;padding:0 14px;border:1px solid #a9a59d;background:#f7f6f3;font:inherit;font-size:16px;font-weight:400;color:#1c1d1f"></label>
+            </div>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Phone or WhatsApp (optional)<input type="tel" name="phone" autocomplete="tel" style="min-height:52px;padding:0 14px;border:1px solid #a9a59d;background:#f7f6f3;font:inherit;font-size:16px;font-weight:400;color:#1c1d1f"></label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Topic<select name="topic" style="min-height:52px;padding:0 12px;border:1px solid #a9a59d;background:#f7f6f3;font:inherit;font-size:16px;font-weight:400;color:#1c1d1f"><option>Tickets</option><option>Tables and lounges</option><option>Artist booking or private event</option><option>Sponsorship or partnership</option><option>Something else</option></select></label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Message<textarea name="message" required rows="5" style="padding:12px 14px;border:1px solid #a9a59d;background:#f7f6f3;font:inherit;font-size:16px;font-weight:400;line-height:1.5;color:#1c1d1f;resize:vertical"></textarea></label>
+            <button type="submit" style="align-self:flex-start;min-height:56px;padding:0 32px;border:0;background:#1c1d1f;color:#f7f6f3;font:inherit;font-weight:600;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer" style-hover="background:#000">Send message</button>
+          </form>
+        </sc-if>
+      </div>
+    </section>
+
+  </main>
+  <dc-import name="SiteFooter" socials="{{ socials }}" hint-size="100%,160px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { d: null };
+  sent = new URLSearchParams(location.search).get('sent') === '1';
+  componentDidMount() {
+    import(new URL('lib/site.js', document.baseURI).href)
+      .then(m => m.load()).then(d => this.setState({ d })).catch(e => console.error(e));
+  }
+  renderVals() {
+    const d = this.state.d, c = d?.contact;
+    return {
+      brands: d?.brands || [], socials: d?.site.socials || [],
+      waUrl: 'https://wa.me/' + (c?.whatsapp || '61427155999'),
+      lineUrl: c?.lineUrl || 'https://lin.ee/PEnL9QG',
+      sent: this.sent, notSent: !this.sent,
+      nextUrl: location.origin + location.pathname + '?sent=1',
+      bookingMailto: c ? `mailto:${c.bookingEmail}?subject=${encodeURIComponent('Booking / sponsor enquiry')}` : '#'
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<article style="display:flex;flex-direction:column;gap:18px;min-width:0;background:#f7f6f3;padding:12px 12px 16px">
+  <a href="{{ ev.href }}" aria-label="{{ infoLabel }}" style="position:relative;display:block;aspect-ratio:4 / 5;overflow:hidden;background:repeating-linear-gradient(135deg,#dcd8d0 0 12px,#d4d0c7 12px 24px);border:1px solid #d2cec6">
+    <span style="position:absolute;left:16px;right:16px;bottom:16px;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.5;color:#56575a">{{ ev.artworkLabel }}</span>
+    <img src="{{ ev.artwork }}" alt="{{ ev.name }}" onError="{{ hideImg }}" onLoad="{{ showImg }}" loading="lazy" style="opacity:0;color:transparent;font-size:0;position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  </a>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <p style="margin:0;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a">{{ ev.brandName }}</p>
+    <h3 style="margin:0;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-0.01em;text-wrap:pretty">{{ ev.name }}</h3>
+    <p style="margin:0;font-size:16px;line-height:1.5;color:#3d3e41">{{ ev.dateLabel }} · {{ ev.venue }}</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <a href="{{ ev.ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 12px;background:{{ accent }};color:{{ btnInk }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;text-align:center">Buy Tickets</a>
+    <a href="{{ ev.href }}" style="display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 12px;border:1px solid #a9a59d;color:#1c1d1f;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;text-align:center">Event Info</a>
+  </div>
+</article>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:380,&quot;height&quot;:720},&quot;ev&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;object&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#1c1d1f&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const ev = this.props.ev || {};
+    return {
+      ev,
+      accent: this.props.accent ?? '#1c1d1f',
+      btnInk: this.props.accent ? '#1c1d1f' : '#f7f6f3',
+      infoLabel: `Event info: ${ev.name || ''}`,
+      hideImg: e => { e.currentTarget.style.display = 'none'; },
+      showImg: e => { e.currentTarget.style.opacity = '1'; }
+    };
+  }
+}
+</script>
+</body>
+</html>

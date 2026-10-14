@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Tours — Alpha Eleven</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:#e7e4de;color:#1c1d1f;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}a{color:#1c1d1f}a:hover{color:#000}</style>
+<script src="lib/pixel.js"></script>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column">
+  <dc-import name="SiteHeader" active="tours" brands="{{ brands }}" hint-size="100%,64px"></dc-import>
+  <main style="flex:1">
+    <section style="max-width:1280px;margin:0 auto;padding:48px 20px 32px">
+      <h1 style="margin:0 0 16px;font-size:clamp(40px,9vw,96px);line-height:0.95;font-weight:600;letter-spacing:-0.02em;text-transform:uppercase">Tours</h1>
+      <p style="margin:0;font-size:18px;line-height:1.5;color:#3d3e41;max-width:560px">Artists we bring to cities across Asia.</p>
+    </section>
+    <div style="max-width:1280px;margin:0 auto;padding:0 20px 88px;display:flex;flex-direction:column">
+      <sc-for list="{{ tours }}" as="t" hint-placeholder-count="2">
+        <article style="background:#f7f6f3;margin-top:16px;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px 48px;align-items:start">
+          <div style="position:relative;aspect-ratio:4 / 5;max-width:440px;width:100%;overflow:hidden;background:repeating-linear-gradient(135deg,#dcd8d0 0 12px,#d4d0c7 12px 24px);border:1px solid #d2cec6">
+            <span style="position:absolute;left:16px;right:16px;bottom:16px;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.5;color:#56575a">{{ t.artworkLabel }}</span>
+            <img src="{{ t.artwork }}" alt="{{ t.title }}" onError="{{ hideImg }}" onLoad="{{ showImg }}" loading="lazy" style="opacity:0;color:transparent;font-size:0;position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <h2 style="margin:0;font-size:clamp(28px,4vw,40px);line-height:1.05;font-weight:600;letter-spacing:-0.01em;text-transform:uppercase;text-wrap:balance">{{ t.title }}</h2>
+            <p style="margin:0;font-size:17px;line-height:1.5;color:#3d3e41">{{ t.summary }}</p>
+            <div style="display:flex;flex-direction:column;border-top:1px solid #d2cec6">
+              <sc-for list="{{ t.dates }}" as="d" hint-placeholder-count="3">
+                <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:16px 0;border-bottom:1px solid #d2cec6">
+                  <div style="display:flex;flex-direction:column;gap:2px">
+                    <span style="font-size:19px;font-weight:500">{{ d.city }}</span>
+                    <span style="font-size:14px;color:#56575a">{{ d.dateLabel }} · {{ d.venue }}</span>
+                  </div>
+                  <a href="{{ d.ticketUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none">Tickets</a>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </main>
+  <dc-import name="SiteFooter" socials="{{ socials }}" hint-size="100%,160px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { d: null };
+  componentDidMount() {
+    import(new URL('lib/site.js', document.baseURI).href)
+      .then(m => m.load()).then(d => this.setState({ d })).catch(e => console.error(e));
+  }
+  renderVals() {
+    const d = this.state.d;
+    return {
+      brands: d?.brands || [], socials: d?.site.socials || [], tours: d?.tours || [],
+      hideImg: e => { e.currentTarget.style.display = 'none'; },
+      showImg: e => { e.currentTarget.style.opacity = '1'; }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+{
+  "_readme": "EDIT THIS FILE TO UPDATE EVENTS. One object per event. 'brand' must match a brand id in data/site.json (osc, decades, goodgroove, soulfood). 'date' is YYYY-MM-DD. The home page and each brand page automatically show that brand's next upcoming event. Event pages live at Event.dc.html?id=<id>. Use \\n\\n in text for a new paragraph. Optional per price tier: \"status\": \"Sold out\" or \"On sale\". Optional 'infoUrl': where the 'More info' button goes (external brand site or landing page). If blank, it uses the built-in Event page.",
+  "month": "October & November 2026",
+  "events": [
+    {
+      "id": "osc-2026-11",
+      "brand": "osc",
+      "name": "ICONS — Celebrating Janet",
+      "date": "2026-11-07",
+      "doors": "21:00",
+      "venue": "Aces Nightclub",
+      "address": "Sukhumvit Soi 11, BTS Nana, Bangkok",
+      "mapUrl": "https://maps.google.com/?q=Aces+Nightclub+Sukhumvit+11+Bangkok",
+      "artwork": "artwork/osc-2026-11.png",
+      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2414867",
+      "facebookEventUrl": "https://facebook.com/events/placeholder-osc",
+      "description": "Timeless R&B and party starter hip hop. Celebrating Janet.",
+      "lineup": [
+        {
+          "name": "Jordan Adam",
+          "note": "DJ"
+        },
+        {
+          "name": "Young G",
+          "note": "DJ"
+        },
+        {
+          "name": "Junior",
+          "note": "DJ"
+        },
+        {
+          "name": "El Rafa",
+          "note": "Host"
+        }
+      ],
+      "prices": [
+        {
+          "tier": "Early bird",
+          "price": "฿[000]",
+          "note": "[Limited quantity, until date]",
+          "status": "Sold out"
+        },
+        {
+          "tier": "General admission",
+          "price": "฿[000]",
+          "note": "[Placeholder note]",
+          "status": "On sale"
+        },
+        {
+          "tier": "Final release",
+          "price": "฿[000]",
+          "note": "[On the door if available]",
+          "status": "On sale"
+        }
+      ],
+      "boothDeposit": "[Placeholder] Booths are secured with a deposit of ฿[0,000]. The deposit is credited towards your drinks package on the night.",
+      "conditions": "[PLACEHOLDER — real deposit and cancellation terms to be added.]\n\n[Term 1]\n[Term 2]\n[Term 3]",
+      "entry": "[Placeholder] 20+ only. Valid photo ID or passport required. Management reserves the right of admission.",
+      "infoUrl": "https://oscbkk.com"
+    },
+    {
+      "id": "decades-2026-10",
+      "brand": "decades",
+      "name": "Thriller on Soi 11 — Halloween",
+      "date": "2026-10-31",
+      "doors": "21:00",
+      "venue": "Aces Nightclub",
+      "address": "Sukhumvit Soi 11, BTS Nana, Bangkok",
+      "mapUrl": "https://maps.google.com/?q=Aces+Nightclub+Sukhumvit+11+Bangkok",
+      "artwork": "artwork/decades-2026-10.png",
+      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2462569",
+      "facebookEventUrl": "https://facebook.com/events/placeholder-decades",
+      "description": "80s retro all night. Michael Jackson live tribute, Thriller flash mob club dance and the Thriller Cyber Zombie Dancers.\n\nDress in Halloween costume. ฿5000 prize for best costume.",
+      "lineup": [
+        {
+          "name": "Camilo",
+          "note": "DJ"
+        },
+        {
+          "name": "Young G",
+          "note": "DJ"
+        },
+        {
+          "name": "Jordan Adam",
+          "note": "DJ"
+        },
+        {
+          "name": "MC Timmy",
+          "note": "Host"
+        }
+      ],
+      "prices": [
+        {
+          "tier": "Early bird",
+          "price": "฿[000]",
+          "note": "[Limited quantity]",
+          "status": "Sold out"
+        },
+        {
+          "tier": "General admission",
+          "price": "฿[000]",
+          "note": "[Placeholder note]",
+          "status": "On sale"
+        },
+        {
+          "tier": "Final release",
+          "price": "฿[000]",
+          "note": "[Placeholder note]",
+          "status": "On sale"
+        }
+      ],
+      "boothDeposit": "[Placeholder] Booths are secured with a deposit of ฿[0,000], credited towards your drinks package.",
+      "conditions": "[PLACEHOLDER — real deposit and cancellation terms to be added.]",
+      "entry": "[Placeholder] 20+ only. Valid photo ID required.",
+      "infoUrl": "https://decadesbkk.com"
+    },
+    {
+      "id": "goodgroove-2026-10",
+      "brand": "goodgroove",
+      "name": "Good Groove — October",
+      "date": "2026-10-30",
+      "doors": "22:00",
+      "venue": "The Red Door",
+      "address": "89/8 Sukhumvit Soi 24, 3rd Floor, Staybridge Suites",
+      "mapUrl": "https://maps.google.com/?q=Staybridge+Suites+Sukhumvit+24+Bangkok",
+      "artwork": "artwork/goodgroove-2026-10.jpg",
+      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2468334",
+      "facebookEventUrl": "https://facebook.com/events/placeholder-goodgroove",
+      "description": "[Placeholder description. Two or three sentences about the night, the music and the crowd.]",
+      "lineup": [
+        {
+          "name": "[DJ name]",
+          "note": "Headliner"
+        },
+        {
+          "name": "[DJ name]",
+          "note": "Support"
+        }
+      ],
+      "prices": [
+        {
+          "tier": "Early bird general admission",
+          "price": "฿500",
+          "note": "Limited release. Available until 19 October unless sold out prior. Includes one standard drink. GA standing.",
+          "status": "On sale"
+        },
+        {
+          "tier": "General admission",
+          "price": "฿600",
+          "note": "Available until 30 October unless sold out prior. Includes one standard drink. GA standing. Door price ฿750.",
+          "status": "On sale"
+        }
+      ],
+      "boothDeposit": "[Placeholder] Booths are secured with a deposit of ฿[0,000], credited towards your drinks package.",
+      "conditions": "[PLACEHOLDER — real deposit and cancellation terms to be added.]",
+      "entry": "20+ with ID.",
+      "banner": "artwork/goodgroove-2026-10-banner.jpg",
+      "upgrades": [
+        {
+          "name": "Le Freak Standing Table",
+          "guests": "Max 4",
+          "cost": "฿3,000",
+          "pay": "Paid in full",
+          "spend": "฿3,000 minimum spend",
+          "includes": "Reserved standing table"
+        },
+        {
+          "name": "Rocksteady Lounge",
+          "guests": "Max 4",
+          "cost": "฿6,000",
+          "pay": "฿1,200 deposit",
+          "spend": "฿6,000 menu spend",
+          "includes": "Reserved sofa in the main room all night"
+        },
+        {
+          "name": "Leave the Door Open VIP Lounge",
+          "guests": "Max 6",
+          "cost": "฿8,000",
+          "pay": "฿1,600 deposit",
+          "spend": "฿8,000 menu spend",
+          "includes": "Reserved VIP sofa beside the DJ booth all night"
+        },
+        {
+          "name": "Dance Music Sex Romance VIP Lounge",
+          "guests": "Max 10",
+          "cost": "฿12,000",
+          "pay": "฿2,400 deposit",
+          "spend": "฿12,000 menu spend",
+          "includes": "Private lounge behind the DJ booth all night"
+        }
+      ],
+      "infoUrl": "Good%20Groove%20Landing.dc.html"
+    },
+    {
+      "id": "soulfood-2026-10",
+      "brand": "soulfood",
+      "name": "Soul Food — All White Halloween",
+      "date": "2026-10-31",
+      "doors": "14:00–20:00",
+      "venue": "Abundance",
+      "address": "Ground Floor, Prime Building, 29/1 Soi Sukhumvit 11, Bangkok",
+      "mapUrl": "https://maps.google.com/?q=Abundance+Prime+Building+29/1+Sukhumvit+11+Bangkok",
+      "artwork": "artwork/soulfood-2026-10.png",
+      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2466870",
+      "facebookEventUrl": "https://facebook.com/events/placeholder-soulfood",
+      "description": "Bangkok's monthly old school R&B day party. Set menu, bottomless mimosas and punch, games, dance offs, timeless music and more.\n\nHeavenly or haunted: all white attire encouraged. Bookings essential.",
+      "lineup": [],
+      "prices": [
+        {
+          "tier": "Early bird",
+          "price": "฿[000]",
+          "note": "[Limited quantity]",
+          "status": "Sold out"
+        },
+        {
+          "tier": "General admission",
+          "price": "฿[000]",
+          "note": "[Placeholder note]",
+          "status": "On sale"
+        },
+        {
+          "tier": "Final release",
+          "price": "฿[000]",
+          "note": "[Placeholder note]",
+          "status": "On sale"
+        }
+      ],
+      "boothDeposit": "[Placeholder] Booths are secured with a deposit of ฿[0,000], credited towards your drinks package.",
+      "conditions": "[PLACEHOLDER — real deposit and cancellation terms to be added.]",
+      "entry": "[Placeholder] 20+ only. Valid photo ID required.",
+      "infoUrl": "https://bkkdayparties.com"
+    }
+  ]
+}

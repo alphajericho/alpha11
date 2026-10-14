@@ -1,0 +1,464 @@
+{
+  "_readme": "Site-wide settings: company info, contact channels, brands and tours. Events live in data/events.json.",
+  "company": {
+    "name": "Alpha Eleven",
+    "about": "[Placeholder] Alpha Eleven is a Bangkok live event promoter behind Old School & Chill, Decades, Good Groove and Soul Food.\n\n[Placeholder] One or two more sentences about the team, the venues and what a night with us is like.",
+    "signupAction": "[BREVO FORM URL — to be added]",
+    "aboutPhoto": "artwork/about.jpg",
+    "heroPhoto": "artwork/home-hero.jpg"
+  },
+  "contact": {
+    "email": "hello@alpha11.co",
+    "bookingEmail": "hello@alpha11.co",
+    "whatsapp": "61427155999",
+    "whatsappDisplay": "+61 427 155 999",
+    "line": "@alphaelevenasia",
+    "lineUrl": "https://lin.ee/PEnL9QG",
+    "messengerUrl": "https://m.me/alphaelevenasia",
+    "instagramUrl": "https://instagram.com/alphaelevenasia"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/alphaelevenasia"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://facebook.com/alphaelevenasia"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://tiktok.com/@alphaelevenasia"
+    }
+  ],
+  "brands": [
+    {
+      "id": "osc",
+      "name": "Old School & Chill",
+      "tagline": "'90s & 2000s R&B and Hip Hop. Strictly pre-2010.",
+      "accent": "oklch(0.80 0.13 75)",
+      "logo": "artwork/logo-osc.png",
+      "about": "[Placeholder] Two or three sentences about Old School & Chill: the music, the crowd, how often it runs.",
+      "facebookUrl": "https://facebook.com/placeholder-osc",
+      "instagramUrl": "https://instagram.com/placeholder-osc",
+      "accentText": "oklch(0.45 0.10 70)",
+      "schedule": "First Saturday monthly · Aces Nightclub",
+      "music": "'90s & '00s R&B and Hip Hop",
+      "booths": [
+        {
+          "name": "New Jack",
+          "type": "Standing table",
+          "guests": 4,
+          "spend": "฿5,000",
+          "includes": [
+            "฿5,000 menu spend",
+            "Reserved standing table",
+            "VIP entry × 4"
+          ]
+        },
+        {
+          "name": "So So Def",
+          "type": "Reserved booth",
+          "guests": 6,
+          "spend": "฿10,000",
+          "includes": [
+            "฿10,000 menu spend",
+            "Reserved area all night",
+            "VIP entry × 6",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Bad Boy",
+          "type": "Reserved booth",
+          "guests": 8,
+          "spend": "฿15,000",
+          "includes": [
+            "฿15,000 menu spend",
+            "Reserved area",
+            "VIP entry × 8",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Roc-A-Fella",
+          "type": "VVIP booth",
+          "guests": 12,
+          "spend": "฿20,000",
+          "includes": [
+            "฿20,000 menu spend",
+            "VVIP reserved area",
+            "VIP entry × 12",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Def Jam",
+          "type": "VVIP booth",
+          "guests": 20,
+          "spend": "฿45,000",
+          "includes": [
+            "฿45,000 menu spend",
+            "VVIP reserved area",
+            "VIP entry × 20",
+            "VIP host",
+            "Catwalk dance floor",
+            "LED screen"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the age limit?",
+          "a": "20+ only. Bring a valid ID or passport."
+        },
+        {
+          "q": "Is there a dress code?",
+          "a": "Grown & sexy. Smart casual, vintage tees, clean sneakers, throwback fits. No beach wear, flip-flops, tank tops on the boys, sports shorts or gym wear."
+        },
+        {
+          "q": "What music will I hear?",
+          "a": "Timeless '90s and '00s R&B, with Hip Hop as the party starter. Nothing after 2010."
+        },
+        {
+          "q": "Can I buy tickets at the door?",
+          "a": "We cannot guarantee door tickets. Any availability is announced in the days before the event. Buy online to guarantee entry."
+        },
+        {
+          "q": "How do I book a table or booth?",
+          "a": "Choose a package below and tap Book, or message us on WhatsApp or LINE. Packages are a minimum spend on the venue menu and include VIP entry for your group."
+        },
+        {
+          "q": "Where can I see photos from last month?",
+          "a": "All galleries are on our Facebook page."
+        }
+      ],
+      "heroImage": "artwork/brand-osc-banner.jpg",
+      "boothNote": "All packages are a minimum spend on the venue menu and include VIP entry for your group. Consumption is subject to 10% service charge and 7% VAT. Custom packages for birthdays, work nights and big groups on request.",
+      "video": {
+        "youtubeId": "",
+        "poster": "artwork/brand-osc-video.jpg",
+        "title": "Old School & Chill — last month recap [placeholder]"
+      }
+    },
+    {
+      "id": "decades",
+      "name": "Decades",
+      "tagline": "Bangkok's retro experience. 70s · 80s · 90s · 00s.",
+      "accent": "oklch(0.80 0.13 330)",
+      "logo": "artwork/logo-decades.png",
+      "about": "[Placeholder] Two or three sentences about Decades.",
+      "facebookUrl": "https://facebook.com/placeholder-decades",
+      "instagramUrl": "https://instagram.com/placeholder-decades",
+      "accentText": "oklch(0.45 0.14 330)",
+      "schedule": "Last Saturday monthly · Aces Nightclub",
+      "music": "70s · 80s · 90s · 00s",
+      "booths": [
+        {
+          "name": "Travolta",
+          "type": "Standing table",
+          "guests": 4,
+          "spend": "฿5,000",
+          "includes": [
+            "฿5,000 menu spend",
+            "Reserved standing table",
+            "VIP entry × 4"
+          ]
+        },
+        {
+          "name": "Madonna",
+          "type": "Reserved booth",
+          "guests": 6,
+          "spend": "฿10,000",
+          "includes": [
+            "฿10,000 menu spend",
+            "Reserved area all night",
+            "VIP entry × 6",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Mercury",
+          "type": "Reserved booth",
+          "guests": 8,
+          "spend": "฿15,000",
+          "includes": [
+            "฿15,000 menu spend",
+            "Reserved area",
+            "VIP entry × 8",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Prince",
+          "type": "VVIP booth",
+          "guests": 12,
+          "spend": "฿20,000",
+          "includes": [
+            "฿20,000 menu spend",
+            "VVIP reserved area",
+            "VIP entry × 12",
+            "VIP host"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "type": "VVIP booth",
+          "guests": 20,
+          "spend": "฿45,000",
+          "includes": [
+            "฿45,000 menu spend",
+            "VVIP reserved area",
+            "VIP entry × 20",
+            "VIP host",
+            "Catwalk dance floor",
+            "LED screen"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the age limit?",
+          "a": "20+ only. Bring a valid ID or passport."
+        },
+        {
+          "q": "Is there a dress code?",
+          "a": "Dress the decade. Retro fits highly encouraged. No flip-flops, beach shorts, tank tops on the boys, sports shorts or gym wear."
+        },
+        {
+          "q": "What music will I hear?",
+          "a": "Set times run forward through the decades: disco and 70s, 80s, 90s dance, 90s and 00s singalongs, then an all-decades finale. Nothing past 2005."
+        },
+        {
+          "q": "Can I buy tickets at the door?",
+          "a": "We cannot guarantee door tickets. Any availability is announced in the days before the event. Buy online to guarantee entry."
+        },
+        {
+          "q": "How do I book a table or booth?",
+          "a": "Choose a package below and tap Book, or message us on WhatsApp or LINE. Packages are a minimum spend on the venue menu and include VIP entry for your group."
+        },
+        {
+          "q": "Where can I see photos from last month?",
+          "a": "All galleries are on our Facebook page."
+        }
+      ],
+      "heroImage": "artwork/brand-decades-banner.jpg",
+      "boothNote": "All packages are a minimum spend on the venue menu and include VIP entry for your group. Consumption is subject to 10% service charge and 7% VAT. Custom packages for birthdays, work nights and big groups on request.",
+      "video": {
+        "youtubeId": "",
+        "poster": "artwork/brand-decades-video.jpg",
+        "title": "Decades — last month recap [placeholder]"
+      }
+    },
+    {
+      "id": "goodgroove",
+      "name": "Good Groove",
+      "tagline": "Good music. Good taste.",
+      "accent": "oklch(0.80 0.13 155)",
+      "logo": "artwork/goodgroove-logo.png",
+      "about": "Good Groove is a night for people who actually love music. Old school funk, disco, hip hop and R&B, played by DJs who know the difference between a hit and a groove. No posing, no gimmicks. Just good records, good people and a room that moves. The perfect start to your weekend.",
+      "facebookUrl": "https://facebook.com/goodgroove",
+      "instagramUrl": "https://instagram.com/goodgroovebkk",
+      "accentText": "oklch(0.42 0.10 155)",
+      "schedule": "Last Friday monthly · The Red Door",
+      "music": "Old school funk · Disco · Hip hop · R&B",
+      "booths": [
+        {
+          "name": "[Package name]",
+          "type": "Standing table",
+          "guests": 4,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        },
+        {
+          "name": "[Package name]",
+          "type": "Reserved booth",
+          "guests": 8,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        },
+        {
+          "name": "[Package name]",
+          "type": "VVIP booth",
+          "guests": 12,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where exactly is it?",
+          "a": "The Red Door, 89/8 Sukhumvit Soi 24, 3rd Floor, Staybridge Suites, Bangkok."
+        },
+        {
+          "q": "What time should I arrive?",
+          "a": "Doors open at 10pm. Come early, the warm-up is half the fun."
+        },
+        {
+          "q": "What should I wear?",
+          "a": "Smart casual and comfortable. Dress like you want to dance, not like you want to be photographed."
+        },
+        {
+          "q": "Can I buy at the door?",
+          "a": "Only if there is space left on the night, at ฿750. Capacity is limited, so booking ahead is encouraged."
+        },
+        {
+          "q": "Is there an age limit?",
+          "a": "20+ with ID."
+        },
+        {
+          "q": "Can I get a refund?",
+          "a": "All sales are final. If an event is cancelled, your ticket moves to the next event or a suitable new date."
+        },
+        {
+          "q": "Do table and lounge upgrades include entry?",
+          "a": "No. Entry tickets are not included with any upgrade and must be bought separately."
+        }
+      ],
+      "heroImage": "artwork/brand-goodgroove-banner.jpg",
+      "boothNote": "All packages are a minimum spend on the venue menu and include VIP entry for your group. Consumption is subject to 10% service charge and 7% VAT. Custom packages for birthdays, work nights and big groups on request.",
+      "video": {
+        "youtubeId": "",
+        "poster": "artwork/brand-goodgroove-video.jpg",
+        "title": "Good Groove — last month recap [placeholder]"
+      },
+      "landing": "/goodgroove"
+    },
+    {
+      "id": "soulfood",
+      "name": "Soul Food",
+      "tagline": "Eat • Sing • Dance. Bangkok's monthly old school R&B day party.",
+      "accent": "oklch(0.64 0.19 38)",
+      "logo": "artwork/logo-soulfood.png",
+      "about": "Bangkok's monthly old school R&B day party. Set menu, bottomless mimosas and punch, games, dance offs and timeless music, all set in one of Soi 11's most unique indoor/outdoor spaces to a soundtrack of feel good old school R&B.",
+      "facebookUrl": "https://facebook.com/placeholder-soulfood",
+      "instagramUrl": "https://instagram.com/placeholder-soulfood",
+      "accentText": "oklch(0.50 0.17 38)",
+      "schedule": "Monthly day party · Abundance, Soi 11",
+      "music": "Old school R&B",
+      "booths": [
+        {
+          "name": "[Package name]",
+          "type": "Standing table",
+          "guests": 4,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        },
+        {
+          "name": "[Package name]",
+          "type": "Reserved booth",
+          "guests": 8,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        },
+        {
+          "name": "[Package name]",
+          "type": "VVIP booth",
+          "guests": 12,
+          "spend": "฿[0,000]",
+          "includes": [
+            "[Inclusion]",
+            "[Inclusion]"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the age limit?",
+          "a": "[Placeholder] 20+ only. Valid ID required."
+        },
+        {
+          "q": "Is there a dress code?",
+          "a": "[Placeholder dress code]"
+        },
+        {
+          "q": "What music will I hear?",
+          "a": "[Placeholder music description]"
+        },
+        {
+          "q": "Can I buy tickets at the door?",
+          "a": "We cannot guarantee door tickets. Any availability is announced in the days before the event. Buy online to guarantee entry."
+        },
+        {
+          "q": "How do I book a table or booth?",
+          "a": "Choose a package below and tap Book, or message us on WhatsApp or LINE. Packages are a minimum spend on the venue menu and include VIP entry for your group."
+        },
+        {
+          "q": "Where can I see photos from last month?",
+          "a": "All galleries are on our Facebook page."
+        }
+      ],
+      "heroImage": "artwork/brand-soulfood-banner.jpg",
+      "boothNote": "All packages are a minimum spend on the venue menu and include VIP entry for your group. Consumption is subject to 10% service charge and 7% VAT. Custom packages for birthdays, work nights and big groups on request.",
+      "video": {
+        "youtubeId": "",
+        "poster": "artwork/brand-soulfood-video.jpg",
+        "title": "Soul Food — last month recap [placeholder]"
+      }
+    }
+  ],
+  "tours": [
+    {
+      "id": "tour-1",
+      "title": "[Artist name] — Asia Tour 2027 [placeholder]",
+      "artwork": "artwork/tour-1.jpg",
+      "summary": "[Placeholder] One sentence about the tour.",
+      "dates": [
+        {
+          "date": "2027-02-12",
+          "city": "Bangkok",
+          "venue": "[Venue]",
+          "ticketUrl": "https://example.com/tickets/tour-1-bkk"
+        },
+        {
+          "date": "2027-02-14",
+          "city": "Singapore",
+          "venue": "[Venue]",
+          "ticketUrl": "https://example.com/tickets/tour-1-sg"
+        },
+        {
+          "date": "2027-02-16",
+          "city": "Kuala Lumpur",
+          "venue": "[Venue]",
+          "ticketUrl": "https://example.com/tickets/tour-1-kl"
+        }
+      ]
+    },
+    {
+      "id": "tour-2",
+      "title": "[Artist name] — Asia Tour 2027 [placeholder]",
+      "artwork": "artwork/tour-2.jpg",
+      "summary": "[Placeholder] One sentence about the tour.",
+      "dates": [
+        {
+          "date": "2027-04-03",
+          "city": "Bangkok",
+          "venue": "[Venue]",
+          "ticketUrl": "https://example.com/tickets/tour-2-bkk"
+        },
+        {
+          "date": "2027-04-05",
+          "city": "Manila",
+          "venue": "[Venue]",
+          "ticketUrl": "https://example.com/tickets/tour-2-mnl"
+        }
+      ]
+    }
+  ],
+  "_videoHelp": "Brand video: paste the YouTube video ID (the part after watch?v=) into brands[].video.youtubeId. The video only loads when someone taps play, so it adds no page weight. Leave youtubeId empty to show the placeholder."
+}
