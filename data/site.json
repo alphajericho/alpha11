@@ -2,9 +2,9 @@
   "_readme": "Site-wide settings: company info, contact channels, brands and tours. Events live in data/events.json.",
   "company": {
     "name": "Alpha Eleven",
-    "about": "[Placeholder] Alpha Eleven is a Bangkok live event promoter behind Old School & Chill, Decades, Good Groove and Soul Food.\n\n[Placeholder] One or two more sentences about the team, the venues and what a night with us is like.",
+    "about": "Founded on the belief that community builds culture, and culture builds unforgettable nights. Alpha Eleven creates curated club nights, themed parties and daytime events across Bangkok, and produces international music tours throughout Thailand. From venue partnerships and production to branding, marketing and ticketing, we handle every detail so each night fills the room and leaves people wanting the next one.",
     "signupAction": "[BREVO FORM URL — to be added]",
-    "aboutPhoto": "artwork/about.jpg",
+    "aboutPhoto": "artwork/about.png",
     "heroPhoto": "artwork/home-hero.jpg"
   },
   "contact": {
@@ -14,21 +14,25 @@
     "whatsappDisplay": "+61 427 155 999",
     "line": "@alphaelevenasia",
     "lineUrl": "https://lin.ee/PEnL9QG",
-    "messengerUrl": "https://m.me/alphaelevenasia",
-    "instagramUrl": "https://instagram.com/alphaelevenasia"
+    "messengerUrl": "https://m.me/alpha11co",
+    "instagramUrl": "https://instagram.com/alpha11co"
   },
   "socials": [
     {
       "label": "Instagram",
-      "url": "https://instagram.com/alphaelevenasia"
+      "url": "https://instagram.com/alpha11co"
     },
     {
       "label": "Facebook",
-      "url": "https://facebook.com/alphaelevenasia"
+      "url": "https://facebook.com/alpha11co"
     },
     {
       "label": "TikTok",
-      "url": "https://tiktok.com/@alphaelevenasia"
+      "url": "https://tiktok.com/@alpha11co"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://youtube.com/@alpha11co"
     }
   ],
   "brands": [

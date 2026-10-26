@@ -1,6 +1,6 @@
 {
   "_readme": "EDIT THIS FILE TO UPDATE EVENTS. One object per event. 'brand' must match a brand id in data/site.json (osc, decades, goodgroove, soulfood). 'date' is YYYY-MM-DD. The home page and each brand page automatically show that brand's next upcoming event. Event pages live at Event.dc.html?id=<id>. Use \\n\\n in text for a new paragraph. Optional per price tier: \"status\": \"Sold out\" or \"On sale\". Optional 'infoUrl': where the 'More info' button goes (external brand site or landing page). If blank, it uses the built-in Event page.",
-  "month": "October & November 2026",
+  "month": "Current Events",
   "events": [
     {
       "id": "osc-2026-11",
@@ -117,7 +117,7 @@
     {
       "id": "goodgroove-2026-10",
       "brand": "goodgroove",
-      "name": "Good Groove — October",
+      "name": "Launch Night",
       "date": "2026-10-30",
       "doors": "22:00",
       "venue": "The Red Door",

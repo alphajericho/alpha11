@@ -22,9 +22,9 @@
     <section aria-label="Featured" style="max-width:1280px;margin:0 auto">
       <img src="{{ heroPhoto }}" alt="Alpha Eleven. Live, events, culture." fetchpriority="high" style="display:block;width:100%;aspect-ratio:1942 / 809;object-fit:cover;background:#111">
     </section>
-    <section aria-labelledby="whats-on" style="max-width:1280px;margin:0 auto;padding:48px 20px 88px">
+    <section aria-labelledby="whats-on" style="max-width:1280px;margin:0 auto;padding:40px 20px 48px">
       <p style="margin:0 0 12px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a">{{ month }}</p>
-      <h1 id="whats-on" style="margin:0 0 48px;font-size:clamp(40px,9vw,96px);line-height:0.95;font-weight:600;letter-spacing:-0.02em;text-transform:uppercase">What's On This Month</h1>
+      <h1 id="whats-on" style="margin:0 0 40px;font-size:clamp(28px,5vw,48px);line-height:1;font-weight:600;letter-spacing:-0.01em;text-transform:uppercase">What's On</h1>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:56px 24px">
         <sc-for list="{{ whatsOn }}" as="ev" hint-placeholder-count="4">
           <dc-import name="EventCard" ev="{{ ev }}" hint-size="100%,620px"></dc-import>
@@ -32,27 +32,28 @@
       </div>
     </section>
     <section aria-labelledby="about" style="border-top:1px solid #d2cec6">
-      <div style="max-width:1280px;margin:0 auto;padding:72px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 48px">
+      <div style="max-width:1280px;margin:0 auto;padding:48px 20px;display:flex;flex-direction:column;gap:24px">
         <h2 id="about" style="margin:0;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a;font-weight:500">About Us</h2>
-        <div style="display:flex;flex-direction:column;gap:32px;max-width:680px">
-          <p style="margin:0;font-size:clamp(20px,2.6vw,28px);line-height:1.4;white-space:pre-line;text-wrap:pretty">{{ about }}</p>
-          <div style="position:relative;aspect-ratio:3 / 2;overflow:hidden;background:repeating-linear-gradient(135deg,#dcd8d0 0 12px,#d4d0c7 12px 24px)">
-            <span style="position:absolute;left:16px;right:16px;bottom:14px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#56575a">ABOUT PHOTO · team / crowd · 3:2 · artwork/about.jpg</span>
-            <img src="{{ aboutPhoto }}" alt="" onError="{{ hideImg }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:start">
+          <div style="position:relative;aspect-ratio:4 / 3;overflow:hidden;background:#1c1d1f">
+            <img src="artwork/about.png" alt="Crowd on the dance floor at an Alpha Eleven night" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px;max-width:620px">
+            <p style="margin:0;font-size:clamp(24px,3.2vw,34px);line-height:1.2;font-weight:600;letter-spacing:-0.01em">Alpha Eleven | Live. Events. Culture.</p>
+            <p style="margin:0;font-size:clamp(18px,2vw,22px);line-height:1.55;white-space:pre-line;text-wrap:pretty">{{ about }}</p>
           </div>
         </div>
       </div>
     </section>
     <section aria-labelledby="contact" style="border-top:1px solid #d2cec6">
-      <div style="max-width:1280px;margin:0 auto;padding:72px 20px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:56px 48px">
+      <div style="max-width:1280px;margin:0 auto;padding:48px 20px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:40px 48px">
         <div style="display:flex;flex-direction:column;gap:24px">
           <h2 id="contact" style="margin:0;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a;font-weight:500">Contact</h2>
-          <dl style="margin:0;display:flex;flex-direction:column;gap:16px;font-size:18px">
-            <div style="display:flex;flex-direction:column;gap:2px"><dt style="font-size:13px;color:#56575a">Email</dt><dd style="margin:0"><a href="{{ mailto }}" style="text-decoration:none">{{ contact.email }}</a></dd></div>
-            <div style="display:flex;flex-direction:column;gap:2px"><dt style="font-size:13px;color:#56575a">WhatsApp</dt><dd style="margin:0"><a href="{{ waUrl }}" target="_blank" rel="noopener" style="text-decoration:none">{{ contact.whatsappDisplay }}</a></dd></div>
-            <div style="display:flex;flex-direction:column;gap:2px"><dt style="font-size:13px;color:#56575a">LINE</dt><dd style="margin:0"><a href="{{ contact.lineUrl }}" target="_blank" rel="noopener" style="text-decoration:none">{{ contact.line }}</a></dd></div>
-          </dl>
-          <a href="Contact.dc.html" style="font-size:14px;letter-spacing:0.1em;text-transform:uppercase;color:#56575a;min-height:44px;display:flex;align-items:center">All contact options</a>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <a href="https://wa.me/61427155999" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap" style-hover="background:#000;color:#f7f6f3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"></path><path d="M9 8.2c-.4.9 0 2.6 1.6 4.2s3.3 2 4.2 1.6l.7-1.2-1.8-1-.9.8c-.8-.4-1.5-1.1-1.9-1.9l.8-.9-1-1.8z" fill="currentColor" stroke-width="0.6"></path></svg>WhatsApp us</a>
+            <a href="https://lin.ee/PEnL9QG" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap" style-hover="background:#000;color:#f7f6f3"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-5 0-9 3.2-9 7.2 0 3.5 3.2 6.5 7.5 7.1.3.1.7.2.8.5.1.3 0 .7 0 .9l-.1.8c0 .3-.2.9.8.5s5.5-3.2 7.5-5.5c1.4-1.5 1.5-2.9 1.5-4.3 0-4-4-7.2-9-7.2z" fill="currentColor"></path><text x="12" y="12.9" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" font-weight="700" fill="#1c1d1f">LINE</text></svg>Add us on LINE</a>
+            <a href="mailto:hello@alpha11.co" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;background:#1c1d1f;color:#f7f6f3;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap" style-hover="background:#000;color:#f7f6f3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3.5 6l8.5 7 8.5-7"></path></svg>Email us</a>
+          </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:20px">
           <h2 style="margin:0;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#56575a;font-weight:500">Get the line-ups first</h2>
@@ -62,7 +63,6 @@
             <input id="signup-email" type="email" name="EMAIL" required="required" placeholder="Your email" autocomplete="email" style="flex:1 1 220px;min-height:52px;padding:0 16px;background:#f7f6f3;border:1px solid #a9a59d;color:#1c1d1f;font:inherit;font-size:16px;border-radius:0">
             <button type="submit" style="flex:0 0 auto;min-height:52px;padding:0 28px;background:#1c1d1f;color:#f7f6f3;border:0;font:inherit;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer">Sign up</button>
           </form>
-          <p style="margin:0;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#6a6b6e">[Placeholder: Brevo signup form to be added]</p>
         </div>
       </div>
     </section>
@@ -84,8 +84,9 @@ class Component extends DCLogic {
       about: d?.site.company.about || '', signupAction: d?.site.company.signupAction || '#',
       socials: d?.site.socials || [], contact: c,
       heroPhoto: d?.site.company.heroPhoto || 'artwork/home-hero.jpg',
-      aboutPhoto: d?.site.company.aboutPhoto || '',
+      aboutPhoto: d?.site.company.aboutPhoto || 'artwork/about.png',
       hideImg: e => { e.currentTarget.style.display = 'none'; },
+      showImg: e => { e.currentTarget.style.display = ''; },
       mailto: `mailto:${c.email || ''}`, waUrl: `https://wa.me/${c.whatsapp || ''}`
     };
   }
