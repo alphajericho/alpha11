@@ -59,36 +59,19 @@
       "infoUrl": "https://oscbkk.com"
     },
     {
-      "id": "decades-2026-10",
+      "id": "decades-2026-11",
       "brand": "decades",
-      "name": "Thriller on Soi 11 — Halloween",
-      "date": "2026-10-31",
+      "name": "Bangkok's Retro Experience",
+      "date": "2026-11-28",
       "doors": "21:00",
       "venue": "Aces Nightclub",
       "address": "Sukhumvit Soi 11, BTS Nana, Bangkok",
       "mapUrl": "https://maps.google.com/?q=Aces+Nightclub+Sukhumvit+11+Bangkok",
-      "artwork": "artwork/decades-2026-10.png",
-      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2462569",
+      "artwork": "artwork/decades-2026-11.png",
+      "ticketUrl": "https://tickets.alpha11.co/events/alphaeleven/2507602",
       "facebookEventUrl": "https://facebook.com/events/placeholder-decades",
-      "description": "80s retro all night. Michael Jackson live tribute, Thriller flash mob club dance and the Thriller Cyber Zombie Dancers.\n\nDress in Halloween costume. ฿5000 prize for best costume.",
-      "lineup": [
-        {
-          "name": "Camilo",
-          "note": "DJ"
-        },
-        {
-          "name": "Young G",
-          "note": "DJ"
-        },
-        {
-          "name": "Jordan Adam",
-          "note": "DJ"
-        },
-        {
-          "name": "MC Timmy",
-          "note": "Host"
-        }
-      ],
+      "description": "70s, 80s, 90s and 00s. Four decades. One dance floor. All retro. All night.\n\nRetro dress encouraged.",
+      "lineup": [],
       "prices": [
         {
           "tier": "Early bird",
